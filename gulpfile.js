@@ -1,6 +1,8 @@
 var gulp = require('gulp'),
 		sass = require('gulp-sass'),
-		browserSync = require('browser-sync');
+		browserSync = require('browser-sync'),
+		concat = require('gulp-concat'),
+		uglify = require('gulp-uglifyjs');
 
 gulp.task('sass', function() {
 	return	gulp.src('app/sass/**/*.sass')
@@ -9,6 +11,9 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('scripts', function() {
+	return gulp.src(['app/js/**/*.js',]);
+});
 
 gulp.task('browser-sync', function() {
     browserSync({
