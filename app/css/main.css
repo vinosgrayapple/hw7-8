@@ -40,7 +40,7 @@ header {
   display: inline-block;
   margin-left: 37px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+          box-sizing: border-box; }
   .menu__li a {
     display: block;
     text-decoration: none;
@@ -92,7 +92,7 @@ header {
 .about__main {
   background: url("../img/about__bg.png") #745083;
   height: 342px;
-  width: 100;
+  width: 100%;
   color: #FFF; }
 
 .about__h1 {
@@ -102,12 +102,14 @@ header {
   font-weight: 300;
   padding-left: 60px; }
 
-.about__h2 {
+.about__h2 a {
   font-size: 18px;
   text-shadow: 1px 1px 1px #0f1818;
   font-weight: 300;
-  padding-left: 225px; }
-  .about__h2:hover {
+  margin-left: 200px;
+  text-decoration: none;
+  color: #FFF; }
+  .about__h2 a:hover {
     text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); }
 
 .about__p {
